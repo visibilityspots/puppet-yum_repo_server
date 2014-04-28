@@ -1,0 +1,8 @@
+name    	'puppet-yum-repo-server'
+version 	'1.0.0'
+source 		'Github'
+author 		'Jan Collijs'
+license 	'GPL'
+summary 	'This module manages an yum-repo-server server'
+description 	'Using this module the yum-repo-server server will be maintained'
+project_page 	'https://github.ugent.be/Universiteitsbibliotheek/pm_yum_repo_server'
