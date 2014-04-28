@@ -1,4 +1,4 @@
-name    	'puppet-yum-repo-server'
+name    	'puppet-yum_repo_server'
 version 	'1.0.0'
 source 		'Github'
 author 		'Jan Collijs'
