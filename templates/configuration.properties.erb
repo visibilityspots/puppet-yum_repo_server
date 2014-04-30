@@ -1,3 +1,23 @@
 # This file is managed by PUPPET
 #
 mongodb.serverlist=<%= scope.lookupvar('yum_repo_server::db_host') %>
+<% if @db_name %>mongodb.db.name=<%= scope.lookupvar('yum_repo_server::db_name') %><% end %>
+<% if @db_user %>mongodb.db.user=<%= scope.lookupvar('yum_repo_server::db_user') %><% end %>
+<% if @db_password %>mongodb.db.password=<%= scope.lookupvar('yum_repo_server::db_password') %><% end %>
+<% if @db_port %>mongodb.port=<%= scope.lookupvar('yum_repo_server::db_port') %><% end %>
+<% if @graphite_host %>graphite.host=<%= scope.lookupvar('yum_repo_server::graphite_host') %><% end %>
+<% if @graphite_port %>graphite.port=<%= scope.lookupvar('yum_repo_server::graphite_port') %><% end %>
+<% if @statsd_host %>statsd.host=<%= scope.lookupvar('yum_repo_server::statsd_host') %><% end %>
+<% if @statsd_port %>statsd.port=<%= scope.lookupvar('yum_repo_server::statsd_port') %><% end %>
+<% if @type %>type=<%= scope.lookupvar('yum_repo_server::type') %><% end %>
+<% if @scheduler_poolSize %>scheduler.poolSize=<%= scope.lookupvar('yum_repo_server::scheduler_poolSize') %><% end %>
+<% if @metadata_tmp_dir %>metadata.tmp.dir=<%= scope.lookupvar('yum_repo_server::metadata_tmp_dir') %><% end %>
+<% if @metadata_outdated_survival_time %>metadata.outdated.survival.time=<%= scope.lookupvar('yum_repo_server::metadata_outdated_survival_time') %><% end %>
+<% if @scheduler_delay %>scheduler.delay=<%= scope.lookupvar('yum_repo_server::scheduler_delay') %><% end %>
+<% if @scheduler_delete_files_delay_minutes %>scheduler.delete.files.delay.minutes=<%= scope.lookupvar('yum_repo_server::scheduler_delete_files_delay_minutes') %><% end %>
+<% if @scheduler_delete_files_cron %>scheduler.delete.files.cron=<%= scope.lookupvar('yum_repo_server::scheduler_delete_files_cron') %><% end %>
+<% if @pam_service_name %>pam.service.name=<%= scope.lookupvar('yum_repo_server::pam_service_name') %><% end %>
+<% if @whitelist %>security.whitelist.hosts=<%= scope.lookupvar('yum_repo_server::whitelist') %><% end %>
+<% if @security_loadbalancer_ips %>security.loadbalancer.ips=<%= scope.lookupvar('yum_repo_server::security_loadbalancer_ips') %><% end %>
+<% if @protected_repos %>security.protectedRepos=<%= scope.lookupvar('yum_repo_server::protected_repos') %><% end %>
+<% if @protected_repos_whitelist %>security.protectedRepoIpWhiteListRegex=<%= scope.lookupvar('yum_repo_server::protected_repos_whitelist') %><% end %>
