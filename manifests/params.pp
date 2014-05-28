@@ -5,6 +5,7 @@
 class yum_repo_server::params {
   $pkg_name                             = 'yum-repo-server'
   $server_type                          = 'jetty'
+  $context                              = 'ROOT'
   $db_host                              = 'localhost'
   $db_name                              = 'rpm_db'
   $db_user                              = undef

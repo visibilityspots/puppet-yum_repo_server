@@ -4,6 +4,8 @@
 class yum_repo_server (
   $pkg_name                             = $yum_repo_server::params::pkg_name,
   $server_type                          = $yum_repo_server::params::server_type,
+  $context                              = $yum_repo_server::params::context,
+
   $db_host                              = $yum_repo_server::params::db_host,
   $db_name                              = $yum_repo_server::params::db_name,
   $db_user                              = $yum_repo_server::params::db_user,
