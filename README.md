@@ -1,4 +1,4 @@
-# puppet-yum-repo-server module
+# puppet-yum-repo-server module [![Build Status](https://travis-ci.org/visibilityspots/puppet-yum_repo_server.svg)](https://travis-ci.org/visibilityspots/puppet-yum_repo_server)
 
 A puppet-module which configures the [yum-repo-server](https://github.com/ImmobilienScout24/yum-repo-server)
 
