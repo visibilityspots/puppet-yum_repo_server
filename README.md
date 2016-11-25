@@ -44,7 +44,7 @@ Tested on a CentOS 6.5 machine using puppet 3.5.1, ruby 1.8.7 and jetty 9.1.3
 
 ## Example
 
-To implement using the defaults or with hiera support:
+implementation using the defaults or with hiera support:
 
 ```puppet
   node 'yum-repo-server' {
@@ -52,7 +52,7 @@ To implement using the defaults or with hiera support:
   }
 ```
 
-For an implementation with custom values without hiera support:
+implementation with custom values without hiera support:
 
 ```puppet
   node 'yum-repo-server' {
